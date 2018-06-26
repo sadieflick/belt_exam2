@@ -1,0 +1,41 @@
+<html lang="en">
+
+<head>
+  <title>Products Home</title>
+
+</head>
+
+<body>
+  <div id="wrapper">
+
+    <h1>Product List</h1>
+    <a [routerLink]="['/products/new']"><button id="add_btn">Add New Product</button></a>
+    <br>
+
+    <table width="400">
+      <tr>
+        <th class="top_row">Id</th>
+        <th class="top_row">Name</th>
+        <th class="top_row">Qty</th>
+        <th class="top_row">Price</th>
+        <th class="top_row">Action</th>
+      </tr>
+      <tr *ngFor="let product of products">
+        <td>{{product._id}}</td>
+        <td>{{product.name}}</td>
+        <td>{{product.qty}}</td>
+        <td>${{product.price}}</td>
+        <td>
+          <button class="details_btn"[routerLink]="['/products/' + product._id]">Details</button>
+          <button class="edit_btn" [routerLink]="['/products/'+ product._id + '/edit']">Edit</button>
+        </td>
+      </tr>
+    </table>
+
+    </div>
+  <!--end of wrapper-->
+  
+
+</body>
+
+</html>

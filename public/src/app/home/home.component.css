@@ -1,0 +1,47 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+#wrapper {
+    border: 2px solid black;
+    margin: 0 auto;
+    padding: 5%;
+}
+
+#add_btn {
+    padding: 5px 20px;
+    background-color:rgb(88, 116, 133);
+    color: white;
+    font-size: 14pt;
+    display: inline-block;
+    margin-left: 50%;
+    margin-bottom: 8%;
+    vertical-align: top;
+    border-radius: 5px;
+}
+table {
+    width: 80%;
+}
+table tr:nth-child(even) {
+    background-color: #eee;
+}
+
+table tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+.edit_btn {
+    padding: 5px 20px;
+    background-color: tan;
+    color: white;
+    border-radius: 5px;
+}
+
+.details_btn {
+    padding: 5px 20px;
+    background-color: pink;
+    color: white;
+    border-radius: 5px;
+}

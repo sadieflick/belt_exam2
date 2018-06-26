@@ -1,0 +1,27 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+#red_btn {
+    padding: 5px 20px;
+    border-radius: 3px;
+    color: white;
+    background-color: red;
+}
+
+.back_button {
+    border-radius: 3px;
+    padding: 5px 20px;
+    background-color: rgb(203, 178, 226);
+}
+
+h3 {
+    color: grey;
+}
+
+#labels, #attributes{
+    display: inline-block;
+    margin-right: 15%;
+}
+

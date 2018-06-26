@@ -1,0 +1,79 @@
+
+<html lang="en">
+
+  <head>
+    <title>Products Home</title>
+  
+  </head>
+
+  <body>
+    <div id="add_product">
+      <h1>New Product</h1>
+
+      <div *ngIf = "errorMessages">
+        <p class="error_msg" *ngFor = "let error of objectKeys(errorMessages)">{{errorMessages[error].message}}</p>
+      </div>
+
+      <form id="form" (submit)="onSubmit()">
+
+        <div id="labels">
+          <h3>Name:</h3> 
+          <h3>Qty:</h3> 
+          <h3>Price:</h3>
+        </div>
+
+        <div id="attributes">
+
+          <div class="error_msg" *ngIf="!name.valid">
+            First name must be at least 3 characters.
+          </div>
+
+          <input 
+            type="text" 
+            name="name" 
+            [(ngModel)]="newProduct.name"
+            #name="ngModel"
+            required
+            minlength="3"
+          /><br>
+
+          <div class="error_msg" *ngIf="!qty.valid">
+              Quantity must be greater than 0.
+          </div>
+          
+          <input 
+            type="text" 
+            name="qty" 
+            [(ngModel)]="newProduct.qty"
+            required
+            min="0"
+            #qty="ngModel"
+          /><br>
+
+          <div class="error_msg" *ngIf="!price.valid">
+              Price must be greater than 0.
+          </div>
+
+          <input 
+            type="text" 
+            name="price" 
+            [(ngModel)]="newProduct.price"
+            required
+            min="0"
+            #price="ngModel"
+          /><br>
+
+        </div>
+        
+        <button class= "add_edit_button"
+          [disabled]="!price.valid || !qty.valid || !name.valid">
+          CREATE
+        </button>
+      </form>
+
+      <button class="cancel_button" (click) = "redirectHome()">Cancel</button>
+      <button class="cancel_button" (click) = "reset()">RESET</button> 
+
+    </div>
+
+  </body>

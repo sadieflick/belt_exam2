@@ -1,0 +1,43 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif; 
+ }
+ 
+ .add_edit_btn {
+     background-color: rgb(28, 212, 111);
+     color: white;
+     padding: 5px 15px;
+     display: block;
+     margin-left: 30%;
+     margin-top: 5%;
+ }
+ 
+ .cancel_button {
+     background-color: pink;
+     color: white;
+     padding: 5px 15px;
+ }
+
+ #wrapper {
+     border: 2px solid black;
+     padding: 5%;
+ }
+
+.error_msg {
+    color: purple;
+}
+
+#labels, #attributes{
+    display: inline-block;
+    margin-right: 15%;
+    margin-top: 4%;
+}
+
+h3 {
+    color: grey;
+}
+
+h1 {
+    margin-bottom: 4%;
+}

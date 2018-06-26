@@ -1,0 +1,44 @@
+* {
+   padding: 0px;
+   margin: 0px;
+   font-family: sans-serif; 
+}
+
+.add_edit_button {
+    background-color: rgb(39, 99, 168);
+    color: white;
+    padding: 5px 15px;
+    display: block;
+    margin-left: 30%;
+    margin-top: 5%;
+}
+
+.cancel_button {
+    background-color: pink;
+    color: white;
+    padding: 5px 15px;
+}
+
+.error_msg {
+    color: purple;
+}
+
+#labels, #attributes{
+    display: inline-block;
+    margin-right: 15%;
+    margin-top: 4%;
+}
+
+h1 {
+    margin-bottom: 3%;
+}
+
+h3 {
+    color: grey;
+}
+
+#add_product {
+    border: 2px solid black;
+    padding: 5%;
+    margin: 0 auto;
+}
